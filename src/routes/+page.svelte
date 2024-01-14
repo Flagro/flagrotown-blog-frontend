@@ -14,25 +14,6 @@
 	});
 </script>
 
-<div class="container">
-	<div class="sign">{randomEmoji} BLOG IN PROGRESS {randomEmoji}</div>
+<div class="flex flex-col items-center justify-center h-screen bg-black">
+	<div class="text-white text-4xl font-bold bg-black bg-opacity-50 p-5">{randomEmoji} BLOG IN PROGRESS {randomEmoji}</div>
 </div>
-
-<style>
-	.container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		height: 100vh;
-		background-color: black;
-	}
-
-	.sign {
-		font-size: 48px;
-		font-weight: bold;
-		color: white;
-		background-color: rgba(0, 0, 0, 0.5);
-		padding: 20px;
-	}
-</style>
