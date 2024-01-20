@@ -1,6 +1,19 @@
 <script>
 </script>
 
-<div class="flex flex-col items-center justify-center h-screen bg-black">
-	<div class="text-white text-4xl font-bold bg-black bg-opacity-50 p-5">BLOG IN PROGRESS</div>
+<div>
+    <footer class="site-footer py-5 shadow-lg text-center">
+        <div class="footer-content">
+            <p class="m-0 text-lg">
+                Contact me at:
+                <a href="mailto:flagrogrey@gmail.com">flagrogrey@gmail.com</a>
+                <span class="text-gray-600"> | </span>
+                Telegram: <a href="https://t.me/flagreyish">@flagreyish</a>
+                <span class="text-gray-600">
+            </p>
+        </div>
+        <div class="copyright mt-2">
+            <p class="text-lg text-gray-600">&copy; 2024 Anton Potapov. All rights reserved.</p>
+        </div>
+    </footer>
 </div>
