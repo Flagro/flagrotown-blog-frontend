@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-    <div class="bg-slate-900 shadow-inner">
+    <div class="bg-slate-900 shadow-inner lg:px-64">
         <Header />
     </div>
 
