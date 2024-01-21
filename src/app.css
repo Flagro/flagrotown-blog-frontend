@@ -3,15 +3,12 @@
 @tailwind utilities;
 
 
-
-
-
 @layer components {
     .header-bg {
         @apply bg-red-700 dark:bg-red-800;
     }
     .main-body-bg {
-        @apply bg-green-700 dark:bg-blue-800;
+        @apply bg-green-700 dark:bg-blue-800 p-12 lg:px-64;
     }
     .footer-bg {
         @apply bg-red-700 dark:bg-red-800;
@@ -19,7 +16,10 @@
 
     .page-body-bg {
         backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.5); /* Adjust the black (0, 0, 0) and the opacity (0.5) as needed */
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        @apply bg-white/30;
     }
 
     .page-body {
