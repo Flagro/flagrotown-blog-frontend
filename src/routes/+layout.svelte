@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-    <div class="bg-slate-800">
+    <div class="bg-slate-900 shadow-inner">
         <Header />
     </div>
 
@@ -25,7 +25,7 @@
         </div>
     </div>
 
-    <div class="bg-slate-800">
+    <div class="bg-slate-900 shadow-inner">
         <Footer />
     </div>
 </div>
