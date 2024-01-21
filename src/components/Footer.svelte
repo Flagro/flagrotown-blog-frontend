@@ -2,7 +2,7 @@
 </script>
 
 <div>
-	<footer class="site-footer py-5 shadow-lg text-center">
+	<footer class="site-footer mt-4 shadow-lg text-center">
 		<div class="footer-content">
 			<p class="m-0 text-lg">
 				Contact me at:
