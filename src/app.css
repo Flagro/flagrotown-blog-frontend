@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
+@layer components {
+    .header-bg {
+        @apply bg-red-700 dark:bg-red-800;
+    }
+    .main-body-bg {
+        @apply bg-green-700 dark:bg-blue-800;
+    }
+    .footer-bg {
+        @apply bg-red-700 dark:bg-red-800;
+    }
+
+    .page-body-bg {
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the black (0, 0, 0) and the opacity (0.5) as needed */
+    }
+
+    .page-body {
+        @apply page-body-bg p-4 lg:p-64 flex flex-col items-center justify-center min-h-screen;
+    }
+}
+
 @layer base {
 	label {
 		@apply text-lg md:text-2xl mb-3 md:mb-5 text-gray-700 dark:text-gray-300;
