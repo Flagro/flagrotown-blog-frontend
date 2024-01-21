@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+.logo {
+    font-family: monospace;
+    @apply text-[#33ff33] hover:text-gray-200;
+    font-size: 30;
+}
+
 @layer components {
     .page-body-bg {
         backdrop-filter: blur(10px);

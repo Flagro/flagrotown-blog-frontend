@@ -14,7 +14,7 @@
 
 <header class="p-4 flex justify-between items-center">
 	<div class="text-lg font-bold">
-		<a href="/" class="hover:text-gray-200">FLAGROTOWN BLOG</a>
+		<a href="/" class="logo"> > open FG_BLOG</a>
 	</div>
 	<button
 		class="text-sm px-4 py-2 rounded"
