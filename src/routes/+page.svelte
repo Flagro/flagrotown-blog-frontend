@@ -4,6 +4,9 @@
 	import PostsList from '../components/PostsList.svelte';
 </script>
 
-<Search />
-<Tags />
-<PostsList />
+
+<div class="page-body">
+	<Search />
+	<Tags />
+	<PostsList />
+</div>

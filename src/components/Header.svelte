@@ -1,29 +1,20 @@
-<script lang="ts">
-	// Import statements if needed
-	let isLoggedIn = false; // Replace with actual authentication logic
-
-	// Function to handle Sign In/Settings button
-	function handleAuthAction() {
-		if (isLoggedIn) {
-			// Logic for opening settings
-		} else {
-			// Logic for signing in
-		}
-	}
+<script>
+    // Import statements (if any) and your script logic here
+    let isLoggedIn = false;
+    // Your script logic, including how `isLoggedIn` gets its value
 </script>
 
-<header class="bg-blue-500 text-white p-4 flex justify-between items-center">
-	<div class="text-lg font-bold">
-		<a href="/" class="hover:text-gray-200">FLAGROTOWN BLOG</a>
-	</div>
-	<button
-		class="bg-blue-700 hover:bg-blue-600 text-sm px-4 py-2 rounded"
-		on:click={handleAuthAction}
-	>
+<header class="p-4 flex justify-between items-center">
+    <div class="text-lg font-bold">
+        <a href="/" class="logo"> > open FG_BLOG</a>
+    </div>
+
+	<nav>
+		<a href="https://flagrotown.com" class="text-lg px-4 py-2 font-bold"> > ABOUT </a>
 		{#if isLoggedIn}
-			Settings
+			<a href="/logout" class="text-lg px-4 py-2 font-bold"> > LOG OUT </a>
 		{:else}
-			Sign In
+			<a href="/login" class="text-lg px-4 py-2 font-bold"> > LOG IN </a>
 		{/if}
-	</button>
+	</nav>
 </header>
