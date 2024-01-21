@@ -12,12 +12,12 @@
 	}
 </script>
 
-<header class="bg-blue-500 text-white p-4 flex justify-between items-center">
+<header class="p-4 flex justify-between items-center">
 	<div class="text-lg font-bold">
 		<a href="/" class="hover:text-gray-200">FLAGROTOWN BLOG</a>
 	</div>
 	<button
-		class="bg-blue-700 hover:bg-blue-600 text-sm px-4 py-2 rounded"
+		class="text-sm px-4 py-2 rounded"
 		on:click={handleAuthAction}
 	>
 		{#if isLoggedIn}
