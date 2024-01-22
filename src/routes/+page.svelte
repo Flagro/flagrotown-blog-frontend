@@ -6,7 +6,11 @@
 
 
 <div class="page-body">
-	<Search />
-	<Tags />
-	<PostsList />
+	<div class="w-3/4">
+		<Search />
+	</div>
+	<div class="w-3/4">
+        <Tags />
+        <PostsList />
+    </div>
 </div>

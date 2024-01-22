@@ -8,7 +8,7 @@
 	}
 </script>
 
-<div class="sticky top-0 z-10 flex items-center bg-blue-500/50 backdrop-blur-md rounded-xl border mx-4 w-3/4">
+<div class="sticky top-0 z-10 flex items-center bg-blue-500/50 backdrop-blur-md rounded-xl border w-full">
 	<input class="flex-1 rounded-l-xl bg-transparent px-4 py-2 placeholder-gray-400 text-gray-300 focus:outline-none" 
 		   bind:value={query} 
 		   placeholder="Search blogs..." />
