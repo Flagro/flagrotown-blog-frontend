@@ -1,11 +1,16 @@
 <script lang="ts">
 	import { searchPosts } from '$lib/services/postsService';
+	import { searchInput } from '$lib/stores/searchStore';
+	import { onMount } from 'svelte';
 	let query = '';
 
 	async function handleSearch() {
 		const results = await searchPosts(query);
+		$searchInput = results;
 		// Update the UI with the search results
 	}
+
+	onMount(handleSearch);
 </script>
 
 <div

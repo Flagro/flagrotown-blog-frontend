@@ -20,12 +20,14 @@
 </script>
 
 <div class="flex justify-center items-center mt-6">
-	<button class="pagination-arrow" class:disabled={$currentPage <= 1} on:click={goToPreviousPage}
-		>&lt;</button
+	<button
+		class="pagination-arrow hover:text-gray-300"
+		class:disabled={$currentPage <= 1}
+		on:click={goToPreviousPage}>&lt;</button
 	>
 	<button class="text-lg mx-4 text-gray-300"> {$currentPage} / {totalPages}</button>
 	<button
-		class="pagination-arrow"
+		class="pagination-arrow hover:text-gray-300"
 		class:disabled={$currentPage >= totalPages}
 		on:click={goToNextPage}>&gt;</button
 	>
@@ -33,7 +35,7 @@
 
 <style>
 	.pagination-arrow {
-		@apply text-blue-500 hover:text-gray-300;
+		@apply text-blue-500;
 	}
 	.disabled {
 		@apply text-gray-300 cursor-not-allowed;

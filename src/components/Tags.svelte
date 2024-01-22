@@ -2,7 +2,7 @@
 	import { selectedTags } from '$lib/stores/tagsStore';
 	import { getTags } from '$lib/services/postsService';
 	import { onMount } from 'svelte';
-	import { fade, scale } from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 
 	let tags: string[] = [];
 

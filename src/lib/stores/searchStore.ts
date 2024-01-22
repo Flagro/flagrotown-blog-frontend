@@ -1,3 +1,3 @@
 import { writable } from 'svelte/store';
 
-export const seatchInput = writable<string>('');
+export const searchInput = writable<string>('');
