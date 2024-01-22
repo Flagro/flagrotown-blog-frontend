@@ -1,6 +1,7 @@
 export type Post = {
 	id: number;
 	name: string;
+	annotation: string;
 	tags: string[];
 };
 

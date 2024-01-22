@@ -10,8 +10,8 @@ export async function getPosts(): Promise<Post[]> {
 
 	// For now, let's return a mock array
 	return [
-		{ id: 1, name: 'Post 1', tags: ['tag1', 'tag2'] },
-		{ id: 2, name: 'Post 2', tags: ['tag2', 'tag3'] }
+		{ id: 1, name: 'Post 1', tags: ['tag1', 'tag2'], annotation: 'This is the annotation for post 1' },
+		{ id: 2, name: 'Post 2', tags: ['tag2', 'tag3'], annotation: 'This is the annotation for post 2' }
 	];
 }
 
