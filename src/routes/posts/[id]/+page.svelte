@@ -20,11 +20,15 @@
 	$: renderedText = post ? marked(post.text) : '';
 </script>
 
-{#if post}
-	<h1>{post.name}</h1>
-	<div>{@html renderedText}</div>
-{:else if error}
-	<p>{error}</p>
-{:else}
-	<p>Loading...</p>
-{/if}
+<div class="page-body">
+	<div class="w-3/4">
+		{#if post}
+			<h1>{post.name}</h1>
+			<div>{@html renderedText}</div>
+		{:else if error}
+			<p>{error}</p>
+		{:else}
+			<p>Loading...</p>
+		{/if}
+	</div>
+</div>
