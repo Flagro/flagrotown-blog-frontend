@@ -14,6 +14,10 @@ export async function getPosts(): Promise<Post[]> {
 	];
 }
 
+export async function getTags(): Promise<string[]> {
+	return ['tag1', 'tag2', 'tag3'];
+}
+
 export async function searchPosts(query: string) {
 	return query;
 }

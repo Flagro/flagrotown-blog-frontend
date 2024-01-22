@@ -1,7 +1,16 @@
 <script lang="ts">
 	import { selectedTags } from '$lib/stores/tagsStore';
+	import { getTags} from '$lib/services/postsService';
+	import { onMount } from 'svelte';
 
-	let tags = ['tag1', 'tag2', 'tag3']; // Replace with your tags
+	let tags: string[] = [];
+
+	async function loadTags() {
+		tags = await getTags();
+		// Apply tag filtering if needed
+	}
+
+	onMount(loadTags);
 
 	function toggleTag(tag: string) {
 		$selectedTags.includes(tag)
