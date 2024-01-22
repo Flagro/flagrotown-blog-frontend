@@ -24,6 +24,10 @@ export async function getPost(postId: string): Promise<PostText> {
 	throw new Error('Post not found');
 }
 
+export async function totalPosts(): Promise<number> {
+	return 2;
+}
+
 export async function getTags(): Promise<string[]> {
 	return ['tag1', 'tag2', 'tag3'];
 }
