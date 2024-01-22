@@ -2,6 +2,7 @@
     import type { Post } from '$lib/types/Post';
     import { getPosts } from '$lib/services/postsService';
     import { selectedTags } from '$lib/stores/tagsStore';
+    import { totalPosts } from '$lib/stores/postsStore';
     import { onMount } from 'svelte';
 
     let posts: Post[] = [];
@@ -53,4 +54,7 @@
             </div>
         </a>
     {/each}
+	{#if posts.length === 0}
+        <p>Oopsie! No posts found :(</p>
+    {/if}
 </div>
