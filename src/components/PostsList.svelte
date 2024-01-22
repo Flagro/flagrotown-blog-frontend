@@ -27,22 +27,30 @@
         transform: scale(1.05);
         box-shadow: 0px 10px 25px -5px rgba(0, 0, 0, 0.2);
     }
+
+    .post-link {
+        text-decoration: none; /* Removes underline from links */
+        color: inherit; /* Inherits text color */
+        display: block; /* Makes the link block level */
+    }
 </style>
 
 <div class="space-y-5 mt-6">
     {#each posts as post}
-        <div class="post-box p-6 pb-1 hover:bg-gray-800/30">
-            <h3 class="text-3xl bp-2 mb-3 font-semibold">{post.name}</h3>
-            <div class="flex flex-wrap gap-2">
-                {#each post.tags as tag}
-                    <span class="tag rounded-full px-3 py-0 border
-                               {($selectedTags.includes(tag) ? 'border-gray-100 bg-green-500' : 'border-gray-300 bg-gray-500')} 
-                               text-white">
-                        {tag}
-                    </span>
-                {/each}
+        <a href={`/posts/${post.id}`} class="post-link">
+            <div class="post-box p-6 pb-1 hover:bg-gray-800/30">
+                <h3 class="text-3xl bp-2 mb-3 font-semibold">{post.name}</h3>
+                <div class="flex flex-wrap gap-2">
+                    {#each post.tags as tag}
+                        <span class="tag rounded-full px-3 py-0 border
+                                   {($selectedTags.includes(tag) ? 'border-gray-100 bg-green-500' : 'border-gray-300 bg-gray-500')} 
+                                   text-white">
+                            {tag}
+                        </span>
+                    {/each}
+                </div>
+                <p class="text-gray-300 mt-5">{post.annotation}</p>
             </div>
-            <p class="text-gray-300 mt-5">{post.annotation}</p>
-        </div>
+        </a>
     {/each}
 </div>
