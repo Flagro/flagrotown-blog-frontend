@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"css-doodle": "^0.38.3"
+		"css-doodle": "^0.38.3",
+		"marked": "^11.1.1"
 	}
 }

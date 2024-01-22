@@ -5,15 +5,14 @@
 	import Pagination from '../components/Pagination.svelte';
 </script>
 
-
 <div class="page-body">
 	<div class="w-3/4">
 		<Search />
 	</div>
 	<div class="w-3/4 flex-grow">
-        <Tags />
-        <PostsList />
-    </div>
+		<Tags />
+		<PostsList />
+	</div>
 	<div class="w-3/4">
 		<Pagination />
 	</div>

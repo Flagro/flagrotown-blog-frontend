@@ -3,31 +3,39 @@ import type { PostText } from '../types/Post';
 import { selectedTags } from '../stores/tagsStore';
 
 export async function getPosts(): Promise<Post[]> {
-    // Fetch posts from an API or local JSON file
-    // For demonstration, we use a mock array
-    let posts = [
-        { id: 1, name: 'Post 1', tags: ['tag1', 'tag2'], annotation: 'This is the annotation for post 1' },
-        { id: 2, name: 'Post 2', tags: ['tag2', 'tag3'], annotation: 'This is the annotation for post 2' }
-    ];
+	// Fetch posts from an API or local JSON file
+	// For demonstration, we use a mock array
+	let posts = [
+		{
+			id: 1,
+			name: 'Post 1',
+			tags: ['tag1', 'tag2'],
+			annotation: 'This is the annotation for post 1'
+		},
+		{
+			id: 2,
+			name: 'Post 2',
+			tags: ['tag2', 'tag3'],
+			annotation: 'This is the annotation for post 2'
+		}
+	];
 
-    // Initialize a variable to store the current selected tags
-    let currentSelectedTags: string[] = [];
+	// Initialize a variable to store the current selected tags
+	let currentSelectedTags: string[] = [];
 
-    // Subscribe to the selectedTags store to get the current value
-    const unsubscribe = selectedTags.subscribe(tags => {
-        currentSelectedTags = tags;
-    });
-    // Remember to unsubscribe to prevent memory leaks
-    unsubscribe();
+	// Subscribe to the selectedTags store to get the current value
+	const unsubscribe = selectedTags.subscribe((tags) => {
+		currentSelectedTags = tags;
+	});
+	// Remember to unsubscribe to prevent memory leaks
+	unsubscribe();
 
-    // Filter posts by tags
-    if (currentSelectedTags.length > 0) {
-        posts = posts.filter(post => 
-            currentSelectedTags.some(tag => post.tags.includes(tag))
-        );
-    }
+	// Filter posts by tags
+	if (currentSelectedTags.length > 0) {
+		posts = posts.filter((post) => currentSelectedTags.some((tag) => post.tags.includes(tag)));
+	}
 
-    return posts;
+	return posts;
 }
 
 export async function getPost(postId: string): Promise<PostText> {
