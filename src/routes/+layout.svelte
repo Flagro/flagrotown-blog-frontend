@@ -20,7 +20,7 @@
 				font-family: sans-serif;
 			`}
         </css-doodle>
-        <div class="relative z-10 main-body-bg p-6 lg:px-64">
+        <div class="relative z-10 p-6 lg:px-64">
             <slot />
         </div>
     </div>

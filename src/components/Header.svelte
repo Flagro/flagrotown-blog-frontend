@@ -10,11 +10,11 @@
     </div>
 
 	<nav>
-		<a href="https://flagrotown.com" class="text-lg px-4 py-2 font-bold"> > ABOUT </a>
+		<a href="https://flagrotown.com" class="text-lg px-4 py-2 font-bold"> > about() </a>
 		{#if isLoggedIn}
-			<a href="/logout" class="text-lg px-4 py-2 font-bold"> > LOG OUT </a>
+			<a href="/logout" class="text-lg px-4 py-2 font-bold"> > log_out() </a>
 		{:else}
-			<a href="/login" class="text-lg px-4 py-2 font-bold"> > LOG IN </a>
+			<a href="/login" class="text-lg px-4 py-2 font-bold"> > log_in() </a>
 		{/if}
 	</nav>
 </header>
