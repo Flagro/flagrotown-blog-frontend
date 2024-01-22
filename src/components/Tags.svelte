@@ -41,7 +41,7 @@
 <div class="flex flex-wrap gap-2 py-3">
     {#each tags as tag}
         <button class="rounded-full px-3 py-0 border tag-button
-                       {($selectedTags.includes(tag) ? 'border-gray-300 bg-green-500 hover:bg-green-600' : 'border-gray-300 bg-gray-200')} 
+                       {($selectedTags.includes(tag) ? 'border-gray-100 bg-green-500 hover:bg-green-600' : 'border-gray-300 bg-gray-500')} 
                        text-white"
                 on:click={() => toggleTag(tag)}
                 in:fade={{ delay: 0, duration: 300 }}>
